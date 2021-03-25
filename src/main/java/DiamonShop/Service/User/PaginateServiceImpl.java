@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import DiamonShop.Dto.PaginatesDto;
 
 @Service
-public class PaginatesServiceImpl {
+public class PaginateServiceImpl {
 	public PaginatesDto GetInfoPaginates(int totalData, int limit, int currentPage) {
 		PaginatesDto paginate = new PaginatesDto();
 		paginate.setLimit(limit);
