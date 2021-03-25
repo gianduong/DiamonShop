@@ -10,6 +10,6 @@ public interface ICategoryService {
 	
 	public List<ProductsDto> getAllProductsByID(int id);
 		
-	public List<ProductsDto> getDataProductsPaginate(int start,int end);
+	public List<ProductsDto> getDataProductsPaginate(int id,int start,int totalPage);
 	
 }

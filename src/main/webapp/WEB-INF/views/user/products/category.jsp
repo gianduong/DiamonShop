@@ -18,13 +18,7 @@
 	border-radius: 50%;
 }
 
-.pagination a:first-child {
-	border: none;
-}
 
-.pagination a:last-child {
-	border: none;
-}
 
 .pagination a.active {
 	background-color: #4CAF50;
@@ -92,7 +86,7 @@
 
 	</div>
 		<div class="pagination">
-			<c:forEach var="item" begin="${paginateInfo.start }" end="${ paginateInfo.end }" varStatus="loop">
+			<c:forEach var="item" begin="1" end="${ paginateInfo.totalPage }" varStatus="loop">
 			<c:if test="${ (loop.index) == paginateInfo.currentPage }">
 				<a class="active" href="<c:url value="/san-pham/${idCategory }/${ loop.index }"/>">${ loop.index }</a>
 			</c:if>

@@ -12,8 +12,8 @@ public class CategoryServiceImpl implements ICategoryService{
 	@Autowired
 	private ProductsDao productsDao;
 
-	public List<ProductsDto> getDataProductsPaginate(int start, int end) {
-		return productsDao.GetDataProductsPaginate(start,end);
+	public List<ProductsDto> getDataProductsPaginate(int id,int start, int totalPage) {
+		return productsDao.GetDataProductsPaginate(id,start,totalPage);
 	}
 
 	public List<ProductsDto> getAllProductsByID(int id) {
