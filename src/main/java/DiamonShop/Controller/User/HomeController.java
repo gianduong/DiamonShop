@@ -14,6 +14,8 @@ public class HomeController extends BaseController{
 		_mvShare.addObject("menus",_homeService.getDataMenus());
 		_mvShare.addObject("slides",_homeService.GetDataSlide());
 		_mvShare.addObject("products",_homeService.getDataProducts());
+		_mvShare.addObject("productsNew",_homeService.getDataProductsNew());
+		_mvShare.addObject("productsHighlight",_homeService.getDataProductsHinglight());
 		_mvShare.addObject("categorys",_homeService.GetDataCategorys());
 		return _mvShare;
 	}

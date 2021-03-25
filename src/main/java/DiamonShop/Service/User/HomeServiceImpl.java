@@ -40,5 +40,15 @@ public class HomeServiceImpl implements IHomeService{
 		return productsDtos;
 	}
 
+	public List<ProductsDto> getDataProductsNew() {
+		List<ProductsDto> productsDtos = productsDao.getDataProductsNew();
+		return productsDtos;
+	}
+
+	public List<ProductsDto> getDataProductsHinglight() {
+		List<ProductsDto> productsDtos = productsDao.getDataProductsHighlight();
+		return productsDtos;
+	}
+
 
 }
