@@ -7,6 +7,7 @@
 	<!-- 
 Body Section 
 -->
+<h1>${menus.size()}</h1>
 	<div class="row">
 		<div id="sidebar" class="span3">
 			<div class="well well-small">
@@ -32,7 +33,7 @@ Body Section
 				</p>
 			</div>
 			<div class="well well-small">
-				<a href="#"><img src="<c:url value="/assets/img/paypal.jpg"/>"
+				<a href="#"><img src="<c:url value="/assets/user/img/paypal.jpg"/>"
 					alt="payment method paypal"></a>
 			</div>
 
@@ -44,7 +45,7 @@ Body Section
 						<a class="zoomTool" href="product_details.html"
 							title="add to cart"><span class="icon-search"></span> QUICK
 							VIEW</a> <img
-							src="<c:url value="/assets/user/img/bootstrap-ecommerce-templates.png"/>"
+							src="<c:url value="/assets/user/img/bootstrap-ecommerce-templates.PNG"/>"
 							alt="bootstrap ecommerce templates">
 						<div class="caption">
 							<h4>
@@ -60,7 +61,7 @@ Body Section
 						<a class="zoomTool" href="product_details.html"
 							title="add to cart"><span class="icon-search"></span> QUICK
 							VIEW</a> <img
-							src="<c:url value="/assets/img/shopping-cart-template.png"/>"
+							src="<c:url value="/assets/user/img/shopping-cart-template.PNG"/>"
 							alt="shopping cart template">
 						<div class="caption">
 							<h4>
@@ -76,7 +77,7 @@ Body Section
 						<a class="zoomTool" href="product_details.html"
 							title="add to cart"><span class="icon-search"></span> QUICK
 							VIEW</a> <img
-							src="<c:url value="/assets/user/img/slide/bootstrap-template.png"/>"
+							src="<c:url value="/assets/user/img/bootstrap-template.png"/>"
 							alt="bootstrap template">
 						<div class="caption">
 							<h4>

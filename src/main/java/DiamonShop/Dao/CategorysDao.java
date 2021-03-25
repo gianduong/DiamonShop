@@ -11,9 +11,8 @@ import DiamonShop.Entity.Categorys;
 import DiamonShop.Entity.MapperCategorys;
 
 @Repository
-public class CategorysDao {
-	@Autowired
-	public JdbcTemplate _jdbcTemplate;
+public class CategorysDao extends BaseDao{
+
 	public List<Categorys> getDataCategorys() {
 		List<Categorys> list = new ArrayList<Categorys>();
 		String sql = "SELECT * FROM categorys";

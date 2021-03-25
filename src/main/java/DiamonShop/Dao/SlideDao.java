@@ -11,9 +11,7 @@ import DiamonShop.Entity.MapperSlides;
 import DiamonShop.Entity.Slides;
 
 @Repository
-public class SlideDao {
-	@Autowired
-	public JdbcTemplate _jdbcTemplate;
+public class SlideDao extends BaseDao{
 	public List<Slides> GetDataSlide() {
 		List<Slides> list = new ArrayList<Slides>();
 		String sql = "SELECT * FROM slides";
