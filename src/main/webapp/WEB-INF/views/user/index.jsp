@@ -13,8 +13,8 @@ Body Section
 				<ul class="nav nav-list">
 
 					<c:forEach var="item" items="${categorys}" varStatus="index">
-						<li><a href="/san-pham/${item.id }"><span
-								class="icon-circle-blank"></span>${ item.name }</a></li>
+						<li><a href='<c:url value="/san-pham/${item.id }" />'><span
+								class="icon-circle-blank"></span> ${ item.name }</a></li>
 					</c:forEach>
 
 					<li><a class="totalInCart" href="cart.html"><strong>Total
