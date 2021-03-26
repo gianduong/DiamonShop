@@ -17,12 +17,9 @@ public class HomeController extends BaseController{
 		_mvShare.addObject("productsNew",_homeService.getDataProductsNew());
 		_mvShare.addObject("productsHighlight",_homeService.getDataProductsHinglight());
 		_mvShare.addObject("categorys",_homeService.GetDataCategorys());
+		_mvShare.setViewName("user/index");
 		return _mvShare;
 	}
 	
-	@RequestMapping(value = {"/product"})
-	public ModelAndView Product() {
-		ModelAndView mv = new ModelAndView("user/product");
-		return mv;
-	}
+	
 }
