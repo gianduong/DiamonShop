@@ -42,11 +42,11 @@
 							class="icon-tumblr"></span></a>
 					</div>
 					<a class="active" href="index.html"> <span class="icon-home"></span>
-						Home
+						Trang chủ
 					</a> <a href="<c:url value="/gio-hang" />"><span class="icon-user"></span> My Account</a> <a
-						href="register.html"><span class="icon-edit"></span> Free
-						Register </a> <a href="contact.html"><span class="icon-envelope"></span>
-						Contact us</a> <a href="<c:url value="/gio-hang" />"><span
+						href="<c:url value="/dang-ky"/>"><span class="icon-edit"></span> Đăng ký </a>
+						 <a href="contact.html"><span class="icon-envelope"></span>
+						Liên hệ</a> <a href="<c:url value="/gio-hang" />"><span
 						class="icon-shopping-cart"></span> ${ TotalQuantyCart } Sản phẩm -
 						<span class="badge badge-warning"><fmt:formatNumber
 								type="number" groupingUsed="true" value="${ TotalPriceCart }" />
@@ -83,8 +83,7 @@ Lower Header Section
 				<a href="#"><img
 					src="<c:url value="/assets/user/img/disc.png"/>" alt="payment"></a>
 			</p>
-			<span>Copyright &copy; 2013<br> bootstrap ecommerce
-				shopping template
+			<span>Copyright &copy; 2013<br> Trang thương mại điện tử uy tín số 1 Việt Nam :((
 			</span>
 		</div>
 	</div>
