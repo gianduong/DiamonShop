@@ -19,4 +19,19 @@ public class AccountServiceImpl implements IAccountService{
 		return usersDao.AddAcc(user);
 	}
 
+
+	public Users Login(Users users) {
+		String pass = users.getPassword();
+		users = usersDao.AddLogin(users);
+		if(users != null) {
+			if(BCrypt.checkpw(pass, users.getPassword()) ) {
+				return users;
+			}else {
+				return null;
+			}
+		}
+
+		return null;
+	}
+
 }

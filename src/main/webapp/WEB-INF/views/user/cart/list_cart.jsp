@@ -65,9 +65,9 @@
 
 					</tbody>
 				</table>
-				<br /> <a href="products.html" class="shopBtn btn-large"><span
+				<br /> <a href="/trang-chu" class="shopBtn btn-large"><span
 					class="icon-arrow-left"></span> Tiếp tục mua sắm </a> <a
-					href="login.html" class="shopBtn btn-large pull-right">Thanh
+					href="/DiamonShop/checkout" class="shopBtn btn-large pull-right">Thanh
 					toán <span class="icon-arrow-right"></span>
 				</a>
 

@@ -1,15 +1,13 @@
 package DiamonShop.Dto;
 
 public class CartDto {
-	private int quanty; 
+	private int quanty;
 	private double totalPrice;
 	private ProductsDto product;
-	
+
 	public CartDto() {
 		super();
 	}
-	
-	
 
 	public CartDto(int quanty, double totalPrice, ProductsDto product) {
 		super();
@@ -17,8 +15,6 @@ public class CartDto {
 		this.totalPrice = totalPrice;
 		this.product = product;
 	}
-
-
 
 	public int getQuanty() {
 		return quanty;
@@ -43,6 +39,5 @@ public class CartDto {
 	public void setProduct(ProductsDto product) {
 		this.product = product;
 	}
-	
-	
+
 }

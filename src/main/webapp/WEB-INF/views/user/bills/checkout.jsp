@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@include file="/WEB-INF/views/layouts/user/taglib.jsp"%>
 <head>
-<title>Đăng ký tài khoản</title>
+<title>Thanh toán</title>
 </head>
 <body>
 	<!-- 
@@ -43,9 +43,8 @@ Body Section
 			<div class="well well-small alert alert-warning cntr">
 				<h2>50% Discount</h2>
 				<p>
-					only valid for online order. <br>
-					<br>
-					<a class="defaultBtn" href="#">Click here </a>
+					only valid for online order. <br> <br> <a
+						class="defaultBtn" href="#">Click here </a>
 				</p>
 			</div>
 			<div class="well well-small">
@@ -54,7 +53,7 @@ Body Section
 			</div>
 
 			<a class="shopBtn btn-block" href="#">Upcoming products <br>
-			<small>Click to view</small></a> <br> <br>
+				<small>Click to view</small></a> <br> <br>
 			<ul class="nav nav-list promowrapper">
 				<li>
 					<div class="thumbnail">
@@ -108,80 +107,56 @@ Body Section
 				<li><a href="index.html">Trang chủ</a> <span class="divider">/</span></li>
 				<li class="active">Người dùng</li>
 			</ul>
-			<h3>Đăng ký</h3>
-			<h3 style="position: absolute;top:30px; left:400px">Đăng nhập</h3>
+			<h3 style="position: absolute; top: 30px; left: 400px">Đăng nhập</h3>
 			<hr class="soft" />
 
 			<div class="row">
 				<div class="span4">
-					<div class="well">
-						<h5>Đăng ký tài khoản</h5>
-						<br />
-						<form:form action="dang-ky" method="POST" modelAttribute="user">  
+					<div class="well" style="width:500px;">
+						<form:form class="form-horizontal" action="checkout" method="POST" modelAttribute="bills">  
 
+							<h3>thanh toán đơn hàng</h3>
 							<div class="control-group">
-								<label class="control-label" for="inputEmail">E-mail:
-								</label>
+								<label class="control-label">Họ và tên <sup>*</sup></label>
 								<div class="controls">
-									<form:input type="email" path="user" class="span3" placeholder="gduongit9@gmail.com"/>  
-									
+									<form:input type="text" path="display_name" class="span3" placeholder="Vd:Nguyễn Giản Dương"/> 
 								</div>
 							</div>
 							<div class="control-group">
-								<label class="control-label" for="inputPassword">Mật khẩu</label>
+								<label class="control-label">Email <sup>*</sup></label>
 								<div class="controls">
-									<form:input type="password" path="password" class="span3" placeholder="Nhập mật khẩu"/> 
+									<form:input type="mail" path="user" class="span3" placeholder="Vd:gduongit9@gmail.com"/> 
 								</div>
 							</div>
 							<div class="control-group">
-								<label class="control-label" for="inputName">Họ và tên</label>
+								<label class="control-label">Liên hệ <sup>*</sup></label>
 								<div class="controls">
-									<form:input type="text" path="display_name" class="span3" placeholder="Nhập họ tên"/> 
+									<form:input type="text" path="phone" class="span3" placeholder="Vd:0363605262"/> 
 								</div>
 							</div>
 							<div class="control-group">
-								<label class="control-label" for="inputAddress">Địa chỉ</label>
-								<div class="controls">  
-									<form:input type="text" path="address" class="span3" placeholder="Hà Nội"/> 
-								</div>
-							</div>
-							<div class="controls">
-								<button type="submit" class="btn block">Đăng ký tài khoản.</button>
-							</div>
-						</form:form>
-					</div>
-				</div>
-				<div class="span1">&nbsp;</div>
-				<div class="span4">
-					<div class="well">
-					
-					
-						<h5>Đăng nhập</h5>
-						<h3 style="color: red;">${ statusLogin }</h3>
-						
-						<form:form action="dang-nhap" method="POST" modelAttribute="user">
-							<div class="control-group">
-								<label class="control-label" for="inputEmail">Email</label>
-								  
+								<label class="control-label">Địa chỉ <sup>*</sup></label>
 								<div class="controls">
-									<form:input type="email" path="user" class="span3" placeholder="gduongit9@gmail.com"/>
+									<form:textarea path="address" class="span3" rows="5" cols="30"/>
 								</div>
 							</div>
 							<div class="control-group">
-								<label class="control-label" for="inputPassword">Mật khẩu</label>
+								<label class="control-label">Ghi chú <sup>*</sup></label>
 								<div class="controls">
-									<form:input type="password" path="password" class="span3" placeholder="Nhập mật khẩu"/>
+									<form:textarea path="note" class="span3" rows="5" cols="30"/>
 								</div>
 							</div>
+							
 							<div class="control-group">
 								<div class="controls">
-									<button type="submit" class="defaultBtn">Đăng nhập</button>
-									<a href="#">Quên mật khẩu?</a>
+									<input type="submit" name="submitAccount" value="Register"
+										class="shopBtn exclusive">
 								</div>
 							</div>
 						</form:form>
 					</div>
 				</div>
+
 			</div>
 
 		</div>

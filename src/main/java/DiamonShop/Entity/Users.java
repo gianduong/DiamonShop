@@ -18,6 +18,12 @@ public class Users {
 
 	
 	
+	public Users(String password, String display_name) {
+		super();
+		this.password = password;
+		this.display_name = display_name;
+	}
+
 	public String getUser() {
 		return user;
 	}
